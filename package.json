@@ -1,12 +1,12 @@
 {
-  "name": "timpr",
-  "version": "0.0.1",
+  "name": "hapij-gulp-boilerplate",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Paul Rad <paul@timpr.com> (https://timpr.com/)",
+  "author": "Paul Rad <paul@paulrad.com> (https://paulrad.com/)",
   "license": "ISC",
   "dependencies": {
     "boom": "2.7.1",
