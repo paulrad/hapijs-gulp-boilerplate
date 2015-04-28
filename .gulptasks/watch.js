@@ -12,15 +12,15 @@ module.exports = {
 
     glivereload.listen();
 
-    gulp.watch('assets/css/**/*', ['combine-css']);
+    gwatch('assets/css/**/*', Tasks['combine-css']);
 
-    gulp.watch('assets/js/**/*', ['combine-js']);
+    gwatch('assets/js/**/*', Tasks['combine-js']);
 
-    gulp.watch('assets/img/**/*', Tasks.images);
+    gwatch('assets/img/**/*', Tasks['images']);
 
-    gulp.watch('assets/dist/build.*', reloadBuilds);
+    gwatch('assets/dist/build.*', reloadBuilds);
 
-    gulp.watch('views/**/*', function(file) {
+    gwatch('views/**/*', function(file) {
       gutil.log("Changed file at %s", file.path);
       glivereload.reload();
     });
