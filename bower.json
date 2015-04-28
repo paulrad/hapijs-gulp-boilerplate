@@ -1,0 +1,39 @@
+{
+  "name": "hapijs-bootstrap",
+  "main": "index.js",
+  "version": "0.0.2",
+  "authors": [
+    "Paul Rad <paul@paulrad.com>"
+  ],
+  "description": "complete hapijs angularjs gulped empty project for start your project with the best practices",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "hapijs",
+    "gulp",
+    "angularjs",
+    "bootstrap",
+    "best",
+    "practices",
+    "starter"
+  ],
+  "license": "MIT",
+  "homepage": "https://paulrad.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendors/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3.15",
+    "angular-resource": "1.3.15",
+    "angular-animate": "1.3.15",
+    "angular-aria": "1.3.15",
+    "angular-route": "1.3.15",
+    "angular-touch": "1.3.15"
+  }
+}

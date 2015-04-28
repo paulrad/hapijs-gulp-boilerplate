@@ -1,0 +1,37 @@
+/**
+ * Ici seront stockées toutes les variables du projet (accès à la base de donneés, configuration du serveur,
+ * accès aux diverses API que vous pourriez utiliser, etc...)
+ * 
+ * Lorsque vous mettrez en production votre projet, il se peut que vous ayez besoin de
+ * définir des variables de développement différentes (accès à la base de données, port, etc...)
+ * Dans ce cas, il vous faudra définir la variable d'environnement NODE_ENV à production.json
+ * Votre fichier ./config/production.json contiendra quant à lui les variables de configuration
+ * qui viendront surcharger celles de votre fichier ./config/default.json
+ */
+{
+  "server": {
+
+    "connection": {
+
+      "host": "localhost",
+
+      "port": 3000
+    }
+  },
+
+  "mongodb": {
+
+    "uri": "mongodb://localhost/hapi_tutorial",
+
+    "options": {
+
+    }
+  },
+
+  // sera accessible dans Swig
+  "locals": {
+
+    "production": false
+
+  }
+}

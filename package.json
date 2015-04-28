@@ -1,0 +1,48 @@
+{
+  "name": "timpr",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Rad <paul@timpr.com> (https://timpr.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "2.7.1",
+    "config": "^1.10.0",
+    "good": "^6.1.2",
+    "good-console": "^5.0.0",
+    "hapi": "8.4.0",
+    "hapi-assets": "^0.3.0",
+    "hapi-cache-buster": "^0.4.0",
+    "hapi-named-routes": "^0.3.0",
+    "joi": "6.3.0",
+    "mongoose": "4.0.2",
+    "q": "^1.1.2",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "bower-files": "^3.7.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-copy": "0.0.2",
+    "gulp-debug": "^2.0.1",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.4",
+    "opn": "^1.0.2",
+    "q": "^1.3.0",
+    "run-sequence": "^1.1.0",
+    "stream-combiner2": "^1.0.2"
+  }
+}
