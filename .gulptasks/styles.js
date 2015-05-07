@@ -7,7 +7,8 @@ module.exports = {
     var combiner = streamCombiner2([
       gulp.src('assets/css/**/*'),
       gdebug(),
-      gless(),
+      gif('*.less', gless()),
+      gif('*.sass', gsass()),
       gautoprefixer({
         browsers: ['last 2 versions']
       }),

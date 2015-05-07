@@ -1,14 +1,79 @@
 <% extends 'layouts/default.html' %>
 
+<% block metaTitle %>HapiJS Complete boilerplate<% endblock %>
+
+<% block head %>
+  
+  <% parent %>
+
+  <style type="text/css">
+  .align-center {
+    text-align: center;
+  }
+  </style>
+
+<% endblock %>
+
+<% block header %>
+
+  <% parent %>
+  <h3>Hey dude, this is magic <span class="icon-thumbs-up-alt"></span></h3>
+
+<% endblock %>
+
 <% block content %>
 
-<h1>HapiJS Complete Boilerplate</h1>
-<h2>Hello world :-)</h2>
+  <p><% i18n hello %><% endi18n %></p>
 
-<img src="/assets/img/chuck-norris.jpg" alt="it's awesome !">
-<p>HapiJS Complete Boilerplate, c'est vraiment cool !</p>
+  <p><strong>SalveJS</strong> est une amorce parfaite pour vos projets.</p>
 
-<img src="/assets/img/maite2.jpg" alt="maite">
-<p>Hééé oui !!!</p>
+  <h3>Objectifs</h3>
+
+  <p>
+    Le principal objectif de <strong>SalveJS</strong> est de faire gagner du temps à tous les développeurs, en mettant en place les bonnes pratiques pour vos prochains projets.<br>Ne vous embêtez plus à concervoir l'architecture de votre application .<br>
+    Installez simplement SalveJS et commencez à coder.
+  </p>
+
+  <h3>Fonctionnalités</h3>
+
+  <ul>
+    <li>Un fichier Gulp complet</li>
+    <li>Les bonnes pratiques Hapi</li>
+    <li>Gestion automatique des icones fontello</li>
+    <li>Support de natif de Mongoose</li>
+    <li>Support d'AngularJS</li>
+    <li>Support des fichier i18n</li>
+  </ul>
+
+  <h3>Ce que SalveJS n'est pas <span class="icon-emo-wink2"></span></h3>
+
+  <p>SalveJS n'est pas un énième framework javascript. L'application vous permet utilise des applications éprouvées telles que HapiJS, AngularJS et met en place pour vous une architecture simple et modulable pour que vous puissiez rapidement commencer à vous mettre au travail, quelque soit la nature de votre projet (API, site statique, site 'complexe').</p>
+
+  <h3>Plugins</h3>
+
+  <ul>
+    <li>salve-basecss</li>
+    <li>salve-bootstrap</li>
+    <li>salve-bootstrapui</li>
+    <li>salve-googlefonts</li>
+    <li>salve-couchedb</li>
+    <li>salve-emberjs</li>
+    <li>salve-mysql</li>
+    <li>salve-redis</li>
+  </ul>
+
+  <h3>Etendre SalveJS</h3>
+
+  <div class="align-center">
+    <a href="" class="button">Visits paulrad.com/salvejs for documentation</a>
+  </div>
+
+<% endblock %>
+
+<% block footer %>
+
+  <img src="/assets/img/chuck-norris.jpg" alt="it's awesome !" width=50>
+  <% parent %>
+  
 
 <% endblock %>

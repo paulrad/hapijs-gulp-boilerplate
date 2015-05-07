@@ -30,7 +30,7 @@
   mongoose.connection.on('error', function(e) {
     err("Mongoose ne peut ouvrir de connection sur %s", config.get('mongodb.uri'));
     err("Options passées:");
-    err(Config.get('mongodb.options'));
+    err(config.get('mongodb.options'));
     err("Sortie d'erreur:");
     err(e);
     exit();
@@ -98,6 +98,12 @@
     tagControls: ['<%', '%>'],
     cmtControls: ['<#', '#>'],
     locals: config.get('locals')
+  });
+
+  swigI18n.init({
+    hello: {
+      en: 'hello'
+    }
   });
 
   server.views({

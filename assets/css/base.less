@@ -6,17 +6,68 @@ html {
 body {
   background: #fff;
   margin: 0 auto;
+  padding: 0;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: 200;
+  color: #000;
 }
 
 h1 {
-  color: @blue;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 200;
+  margin: 0;
+  line-height: normal;
 }
 
 a {
-  color: @orange;
-  font-weight: bold
 }
 
 p {
-  color: @orange; 
+}
+
+.viewport {
+  max-width: 1020px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header,
+footer {
+  padding: 20px;
+  background: @indigo;
+}
+
+header h1,
+header h2,
+header h3 {
+  color: #fff;
+}
+
+header h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+#root {
+  padding: 50px 0;
+}
+
+footer {
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: @cyan;
+  color: #fff;
+  border-radius: 2px;
+  text-decoration: none;
 }

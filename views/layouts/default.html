@@ -2,18 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <% block head %>
+    <title><% block metaTitle %><% endblock %></title>
     <link type="text/css" rel="stylesheet" href="/assets/build.css">
-    <% endblock %>
+    <% block head %><% endblock %>
   </head>
   <body>
-  <% block content %><% endblock %>
+
+  <header>
+    <div class="viewport">
+      <% block header %>
+        <h1>SalveJS</h1>
+        <h2>Welcome on hapi complete boilerplate <span class="icon-emo-happy"></span></h2>
+      <% endblock %>
+    </div>
+  </header>
+
+  <div id="root">
+    <% if (fullscreen) %>
+      <% block content %><% endblock %>
+    <% else %>
+      <div class="viewport">
+        <% block content %><% endblock %>
+      </div>
+    <% endif %>
+  </div>
+
+  <footer>
+    <div class="viewport">
+      <% block footer %>
+        A bootstrap by paulrad.com
+      <% endblock %>
+    </div>
+  </footer>
+
   <% block foot %>
-  <script src="/assets/build.js"></script>
-  <% if (production === false) %>
-  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
-  <% endif %>
+    <script src="/assets/build.js"></script>
+    <% if (production === false) %>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    <% endif %>
   <% endblock %>
   </body>
 </html>

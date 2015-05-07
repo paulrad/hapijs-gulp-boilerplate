@@ -12,11 +12,17 @@ module.exports = {
 
     glivereload.listen();
 
+    gwatch('.fontello.json', function() {
+      runSequence('fontello', 'fonts', 'styles');
+    });
+
     gwatch('assets/css/**/*', Tasks['combine-css']);
 
     gwatch('assets/js/**/*', Tasks['combine-js']);
 
     gwatch('assets/img/**/*', Tasks['images']);
+
+    gwatch('asstes/fonts/**/*', Tasks['fonts']);
 
     gwatch('assets/dist/build.*', reloadBuilds);
 
